@@ -1,6 +1,6 @@
 package com.skilldistillery.animals.entities;
 
-public class Animal extends Sanctuary {
+public class Animal {
 	// each animal has a name (private)
 	// each animal can make a sound
 	// each species has a subclass that defines its unique state and behavior
@@ -19,16 +19,22 @@ public class Animal extends Sanctuary {
 		this.name = name;
 	}
 
-	public void makeNoise();
+	public void makeNoise() {
+		System.out.println("You shouldn't be seeing this Animal.");
+		
+	}
 
-	public eatFood(int amount);
+	public void eatFood(int amount) {
+		System.out.println("You shouldn't be seeing this Animal.");
+	}
 
 	public String getName() {
 		return name;
 	}
 
-	public void setName() {
-		return name;
+	public void setName(String name) {
+		this.name = name;
 	}
+
 
 }

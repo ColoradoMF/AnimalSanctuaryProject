@@ -4,12 +4,10 @@ public class Lion extends Animal {
 	//TODO method to make noise: quack, moo or roar
 	//TODO method to eat food
 	
-	private String name;
 	private static String noise = "Roaaaar";
-	private int foodAmount = 10; 
 	
 	public Lion(String name){
-		this.name = name;
+		super(name);
 		}	
 	
 	@Override
