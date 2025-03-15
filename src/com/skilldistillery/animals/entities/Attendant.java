@@ -17,7 +17,7 @@ public class Attendant {
 				System.out.println("Attendant is now feeding " + animals[i].getName() + 
 						" their krill ");
 				animals[i].makeNoise();
-				animals[i].eatFood((int)Math.random() * 10 + 1);
+				animals[i].eatFood((int)(Math.random() * 10 + 1));
 			}
 				
 		}
