@@ -7,15 +7,15 @@ public class Attendant {
 
 	public void makeRounds(Animal[] animals) {
 		// check for null 
+		System.out.println("Attendant is enroute to feed animals.");
 		for (int i = 0; i < animals.length; i++) {
 			if (animals[i] == null) {
 				System.out.println("Empty enclosure.");
 			}
 			else { 
-				System.out.println("Attendant is enroute to feed animals.");
 				
 				System.out.println("Attendant is now feeding " + animals[i].getName() + 
-						" their krill ");
+						" their foood.");
 				animals[i].makeNoise();
 				animals[i].eatFood((int)(Math.random() * 10 + 1));
 			}

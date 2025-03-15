@@ -5,7 +5,7 @@ public class Whale extends Animal {
 	// TODO method to make noise: quack, moo or roar DONE
 	// TODO method to eat food DONE
 
-	private static String noise = "singing song";
+	private static String noise = "Whale is singing song.";
 
 	public Whale(String name) {
 		super(name);
@@ -18,7 +18,7 @@ public class Whale extends Animal {
 
 	@Override
 	public void eatFood(int foodAmount) {
-		System.out.println("Gulp gulp " + foodAmount + " tons of krill.");
+		System.out.println("Gulp gulp whale eats " + foodAmount + " tons of krill.");
 	}
 
 }

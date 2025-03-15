@@ -20,16 +20,23 @@ public class Sanctuary {
 	public void listAnimals() {
 		for (int i = 0; i < animals.length; i++) {
 			if (animals[i] != null) {
-				System.out.println(animals[i]);
+				System.out.println(animals[i].getName());
 			}
 		}
 	}
 	
 	public void addAnimal(Animal animal) {
-		
+		int i = 0;
+		for (i = 0; i < animals.length; i++) {
+			if (animals[i] == null) {
+				animals[i] = animal;
+				return;
+			}
+		}
+		System.out.println("Sorry sanctuary has no open enclosures.");
 	}
 	
 	public void startAttendantRounds() {
-
+			attendant.makeRounds(animals); 
 	}
 }
