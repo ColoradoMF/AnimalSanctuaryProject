@@ -2,10 +2,26 @@ package com.skilldistillery.animals.entities;
 
 public class Attendant {
 
-	// make rounds & attend to animals in Animal array, return void 
+	// make rounds & attend to animals in Animal array, return void
+	
 
-	public void attendToAnimals(Animal[] animals) {
-		
+	public void makeRounds(Animal[] animals) {
+		// check for null 
+		for (int i = 0; i < animals.length; i++) {
+			if (animals[i] == null) {
+				System.out.println("Empty enclosure.");
+			}
+			else { 
+				System.out.println("Attendant is enroute to feed animals.");
+				
+				System.out.println("Attendant is now feeding " + animals[i].getName() + 
+						" their krill ");
+				animals[i].makeNoise();
+				animals[i].eatFood((int)Math.random() * 10 + 1);
+			}
+				
+		}
+		System.out.println("Feeding time is over.");
 	}
 	
 }
