@@ -10,7 +10,7 @@ public class Attendant {
 		System.out.println("Attendant is enroute to feed animals.");
 		for (int i = 0; i < animals.length; i++) {
 			if (animals[i] == null) {
-				System.out.println("Empty enclosure.");
+				System.out.println("Empty enclosure, on to the next.");
 			}
 			else { 
 				

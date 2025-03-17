@@ -38,14 +38,17 @@ public class AnimalSanctuaryApp {
 		 	kb = new Scanner(System.in);
 		 	sanctuary = new Sanctuary();
 			System.out.println("\n\n\n");
+			
 			boolean menuLoop = true;
 			String menuChoice;
+			
 			while (menuLoop) {
-				System.out.println("1. List of animals here.");
+				System.out.println("1. Show a list of current animals.");
 				System.out.println("2. Add animal.");
 				System.out.println("3. See attendant feed animals.");
 				System.out.println("4. Exit.");
 			menuChoice = kb.next();
+			
 			switch(menuChoice) {
 			case "1":{
 				sanctuary.listAnimals();
